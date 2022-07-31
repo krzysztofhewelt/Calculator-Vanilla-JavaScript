@@ -14,7 +14,7 @@ A simple and pretty calculator written in vanilla JS.
 # Getting started
 1. Clone this repo
 ``` 
-git clone ???
+git clone https://github.com/krzysztofhewelt/Calculator-Vanilla-JavaScript
 ```
 2. Run index.html in your browser
 
