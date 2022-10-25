@@ -28,6 +28,8 @@ button:hover {
 	background-color: rgba(255, 255, 255, 0.90);
 }
 
+/* calculator */
+
 .calculator {
 	display: grid;
 	justify-content: center;
@@ -38,83 +40,7 @@ button:hover {
 	min-height: 100vh;
 }
 
-.span-two {
-	grid-column: span 2;
-}
-
-.history {
-	background-color: rgba(20,27,27,0.151);
-	padding: 15px;
-	text-align: center;
-	overflow-y: auto;
-	height: 570px;
-	width: 300px;
-}
-
-.history_button {
-	color: white;
-	background: rgba(29,27,27,0.603);
-	border: none;
-	font-size: 15px;
-	padding: 10px 15px;
-	border-radius: 20px;
-	cursor: pointer;
-	font-weight: bold;
-	outline: none;
-	margin: 5px auto;
-}
-
-.history_button:hover {
-	color: black;
-	background: white;
-}
-
-.historyElements {
-	list-style-type: none;
-	color: white;
-	padding: 0;
-	font-weight: bold;
-	font-size: 1.5em;
-}
-
-.historyElements > li {
-	padding-bottom: 10px;
-}
-
-.clear, .delete , .inverse {
-	background-color: rgba(255, 174, 174, 0.75);
-}
-
-.clear:hover, .delete:hover, .inverse:hover {
-	background-color: rgba(255, 174, 174, 0.9);
-}
-
-.operators, .equals, .percent {
-	background-color: rgba(115, 255, 181, 0.75);
-}
-
-.operators:hover, .equals:hover, .percent:hover {
-	background-color: rgba(115, 255, 181, 0.9);
-}
-
-.special {
-	background-color: rgba(137, 187, 255, 0.75);
-}
-
-.special:hover {
-	background-color: rgba(137, 187, 255, 0.9);
-}
-
-.nothing {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	background: none;
-	border: none;
-}
-
-.output {
+.calculator__output-display {
 	font-family: Arial, serif;
 	grid-column: 1 / -1;
 	background-color: rgba(0, 0, 0, 0.75);
@@ -127,14 +53,102 @@ button:hover {
 	word-break: break-all;
 }
 
-.previousValue {
+.calculator__previous-value {
 	color: rgba(255, 255, 255, 0.75);
 	font-size: 1.5em;
 }
 
-.currentValue {
+.calculator__current-value {
 	color: white;
 	font-size: 2.5em;
+}
+
+/* history */
+
+.history {
+	background-color: rgba(20,27,27,0.151);
+	padding: 15px;
+	text-align: center;
+	overflow-y: auto;
+	height: 570px;
+	width: 300px;
+}
+
+.history__button_clear {
+	color: white;
+	background: rgba(29,27,27,0.603);
+	border: none;
+	font-size: 15px;
+	padding: 10px 15px;
+	border-radius: 20px;
+	cursor: pointer;
+	font-weight: bold;
+	outline: none;
+	margin: 5px auto;
+}
+
+.history__button_clear:hover {
+	color: black;
+	background: white;
+}
+
+.history__elements {
+	list-style-type: none;
+	color: white;
+	padding: 0;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.history__elements > li {
+	padding-bottom: 10px;
+}
+
+/* calculator buttons */
+.button_clear,
+.button_delete,
+.button_inverse {
+	background-color: rgba(255, 174, 174, 0.75);
+}
+
+.button_clear:hover,
+.button_delete:hover,
+.button_inverse:hover {
+	background-color: rgba(255, 174, 174, 0.9);
+}
+
+.button_operator,
+.button_equals,
+.button_percent {
+	background-color: rgba(115, 255, 181, 0.75);
+}
+
+.button_operator:hover,
+.button_equals:hover,
+.button_percent:hover {
+	background-color: rgba(115, 255, 181, 0.9);
+}
+
+.button_special {
+	background-color: rgba(137, 187, 255, 0.75);
+}
+
+.button_special:hover {
+	background-color: rgba(137, 187, 255, 0.9);
+}
+
+.button_span-two {
+	grid-column: span 2;
+}
+
+/* fixes for JS */
+.nothing {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: none;
+	border: none;
 }
 
 /* scrollbar */

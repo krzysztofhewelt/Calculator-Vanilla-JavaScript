@@ -297,20 +297,20 @@ class Calculator {
 }
 
 // fetch all buttons values
-numberButtons = document.querySelectorAll('.numbers') // numeric 1,2,3,...,9
-operationButtons = document.querySelectorAll(".operators") // basic operations */+-
-equalsButton = document.querySelectorAll(".equals") // equals
-percentButton = document.querySelectorAll(".percent") // percent
-deleteButtons = document.querySelector(".delete") // delete one number from input ←
-clearButton = document.querySelector(".clear") // clear button
-inverseButton = document.querySelector(".inverse") // inverse number
-specialButtons = document.querySelectorAll(".special") // special operations ex. x!, log, cos, tan, ...
-clearHistoryButton = document.querySelector(".history_button") // using for clear calculations history
-historyElements = document.querySelector(".historyElements");
+numberButtons = document.querySelectorAll('.button_numbers') // numeric 1,2,3,...,9
+operationButtons = document.querySelectorAll(".button_operator") // basic operations */+-
+equalsButton = document.querySelectorAll(".button_equals") // equals
+percentButton = document.querySelectorAll(".button_percent") // percent
+deleteButtons = document.querySelector(".button_delete") // delete one number from input ←
+clearButton = document.querySelector(".button_clear") // clear button
+inverseButton = document.querySelector(".button_inverse") // inverse number
+specialButtons = document.querySelectorAll(".button_special") // special operations ex. x!, log, cos, tan, ...
+clearHistoryButton = document.querySelector(".history__button_clear") // using for clear calculations history
+historyElements = document.querySelector(".history__elements");
 
 // get numbers from display 
-previousValueText = document.getElementsByClassName("previousValue")[0]
-currentValueText = document.getElementsByClassName("currentValue")[0]
+previousValueText = document.getElementsByClassName("calculator__previous-value")[0]
+currentValueText = document.getElementsByClassName("calculator__current-value")[0]
 
 
 // initialize new object...
